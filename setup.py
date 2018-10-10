@@ -42,6 +42,10 @@ except(IOError, ImportError):
 
 requirements = [
     'numpy',
+    'torch',
+    'tqdm',
+    'request',
+    'Pillow',
 ]
 
 setup(
