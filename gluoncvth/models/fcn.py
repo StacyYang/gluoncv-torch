@@ -7,7 +7,7 @@ from torch.nn.functional import interpolate
 
 from .base import BaseNet
 
-__all__ = ['FCN', 'get_fcn', 'get_fcn_resnet50_ade', 'get_fcn_resnet50_ade']
+__all__ = ['FCN', 'get_fcn', 'get_fcn_resnet101_voc', 'get_fcn_resnet101_ade']
 
 class FCN(BaseNet):
     r"""Fully Convolutional Networks for Semantic Segmentation
@@ -93,7 +93,7 @@ def get_fcn(dataset='pascal_voc', backbone='resnet50', pretrained=True,
             get_model_file('fcn_%s_%s'%(backbone, acronyms[dataset]), root=root)))
     return model
 
-def get_fcn_resnet50_ade(pretrained=True, root='~/.encoding/models', **kwargs):
+def get_fcn_resnet101_voc(pretrained=True, root='~/.encoding/models', **kwargs):
     r"""EncNet-PSP model from the paper `"Context Encoding for Semantic Segmentation"
     <https://arxiv.org/pdf/1803.08904.pdf>`_
 
@@ -107,10 +107,10 @@ def get_fcn_resnet50_ade(pretrained=True, root='~/.encoding/models', **kwargs):
 
     Examples
     --------
-    >>> model = get_fcn_resnet50_ade(pretrained=True)
+    >>> model = get_fcn_resnet50_voc(pretrained=True)
     >>> print(model)
     """
-    return get_fcn('ade20k', 'resnet50', pretrained, root=root, **kwargs)
+    return get_fcn('pascal_voc', 'resnet101', pretrained, root=root, **kwargs)
 
 def get_fcn_resnet101_ade(pretrained=True, root='~/.encoding/models', **kwargs):
     r"""EncNet-PSP model from the paper `"Context Encoding for Semantic Segmentation"

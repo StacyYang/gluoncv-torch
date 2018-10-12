@@ -7,16 +7,21 @@ import zipfile
 from ..utils import download, check_sha1
 
 _model_sha1 = {name: checksum for checksum, name in [
-    ('', 'resnet18'),
-    ('', 'resnet34'),
-    ('', 'resnet101'),
-    ('', 'resnet50'),
-    ('', 'resnet101'),
-    ('', 'resnet152'),
+    ('7591854d34e97010f019e9f98f9aed9c4a463d58', 'resnet18'),
+    ('64557eb2096a56ff2db4fdd637e00ede804c1fec', 'resnet34'),
+    ('0ef8ed2db4162747fecb34ee542b944d141b3ef1', 'resnet50'),
+    ('1834038c51dd60b2819b4391acfec0bb4525f986', 'resnet101'),
+    ('990926f3c93c67aea2342d1a5b88ba63dfee32f4', 'resnet152'),
+    ('357fb3777da3ebdf13ab06bee51fa6f83837967c', 'fcn_resnet101_voc'),
+    ('8bb3bccd02da0e5431a616d3abe7e8c383e8f587', 'fcn_resnet101_ade'),
+    ('6d90aaae73a3adcb20f186895b27bf45368601ab', 'psp_resnet101_voc'),
+    ('fe990f00dda51d58718c43cf4705e0a61ca15ef0', 'psp_resnet101_ade'),
+    ('5c25b7db003fb805df6574139bf04e1b85f0f37d', 'deeplab_resnet101_voc'),
+    ('c0d88de54f3abbc358038c248f0863bef96fb0d4', 'deeplab_resnet101_ade'),
     ]}
 
 encoding_repo_url = 'https://hangzh.s3.amazonaws.com/'
-_url_format = '{repo_url}gluoncvth/models/{file_name}.zip'
+_url_format = '{repo_url}encoding/gluoncvth/{file_name}.zip'
 
 def short_hash(name):
     if name not in _model_sha1:
@@ -89,4 +94,3 @@ def purge(root=os.path.join('~', '.encoding', 'models')):
 
 def pretrained_model_list():
     return list(_model_sha1.keys())
-
