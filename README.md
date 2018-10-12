@@ -112,7 +112,9 @@ More models available at [GluonCV Semantic Segmentation ModelZoo](https://gluon-
 ## Why [GluonCV](https://gluon-cv.mxnet.io/)?
 
 **1. State-of-the-art Implementations**
+
 **2. Pretrained Models and Tutorials**
+
 **3. Community Support**
 
 We expect this PyTorch inference API for GluonCV models will be beneficial to the entire computer vision comunity.
