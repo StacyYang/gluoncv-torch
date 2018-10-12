@@ -51,7 +51,7 @@ Results on ADE20K dataset:
 | [PSPNet](#pspnet)       | ResNet101     | 80.8      | 42.9       |
 | [DeepLabV3](#deeplabv3) | ResNet101     | 81.1      | 44.1       |
 
-**Quick Demo the model**
+**Quick Demo**
 
 ```python
 import torch
