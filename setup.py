@@ -2,6 +2,7 @@
 import os
 import io
 import re
+import subprocess
 from setuptools import setup, find_packages
 import setuptools.command.develop 
 import setuptools.command.install 
