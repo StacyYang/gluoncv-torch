@@ -209,7 +209,7 @@ class WideResNet(nn.Module):
             return out
         return out
 
-def wideresnet38(pretrained=False, root='~/.encoding/models', **kwargs):
+def wideresnet38(pretrained=False, root='~/.gluoncvth/models', **kwargs):
     """Constructs a ResNet-50 model.
 
     Args:

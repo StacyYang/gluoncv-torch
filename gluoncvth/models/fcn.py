@@ -68,7 +68,7 @@ class FCNHead(nn.Module):
 
 
 def get_fcn(dataset='pascal_voc', backbone='resnet50', pretrained=True,
-            root='~/.encoding/models', **kwargs):
+            root='~/.gluoncvth/models', **kwargs):
     r"""FCN model from the paper `"Fully Convolutional Network for semantic segmentation"
     <https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf>`_
     Parameters
@@ -77,7 +77,7 @@ def get_fcn(dataset='pascal_voc', backbone='resnet50', pretrained=True,
         The dataset that model pretrained on. (pascal_voc, ade20k)
     pretrained : bool, default False
         Whether to load the pretrained weights for model.
-    root : str, default '~/.encoding/models'
+    root : str, default '~/.gluoncvth/models'
         Location for keeping the model parameters.
     Examples
     --------
@@ -93,7 +93,7 @@ def get_fcn(dataset='pascal_voc', backbone='resnet50', pretrained=True,
             get_model_file('fcn_%s_%s'%(backbone, acronyms[dataset]), root=root)))
     return model
 
-def get_fcn_resnet101_voc(pretrained=True, root='~/.encoding/models', **kwargs):
+def get_fcn_resnet101_voc(pretrained=True, root='~/.gluoncvth/models', **kwargs):
     r"""EncNet-PSP model from the paper `"Context Encoding for Semantic Segmentation"
     <https://arxiv.org/pdf/1803.08904.pdf>`_
 
@@ -101,7 +101,7 @@ def get_fcn_resnet101_voc(pretrained=True, root='~/.encoding/models', **kwargs):
     ----------
     pretrained : bool, default False
         Whether to load the pretrained weights for model.
-    root : str, default '~/.encoding/models'
+    root : str, default '~/.gluoncvth/models'
         Location for keeping the model parameters.
 
 
@@ -112,7 +112,7 @@ def get_fcn_resnet101_voc(pretrained=True, root='~/.encoding/models', **kwargs):
     """
     return get_fcn('pascal_voc', 'resnet101', pretrained, root=root, **kwargs)
 
-def get_fcn_resnet101_ade(pretrained=True, root='~/.encoding/models', **kwargs):
+def get_fcn_resnet101_ade(pretrained=True, root='~/.gluoncvth/models', **kwargs):
     r"""EncNet-PSP model from the paper `"Context Encoding for Semantic Segmentation"
     <https://arxiv.org/pdf/1803.08904.pdf>`_
 
@@ -120,7 +120,7 @@ def get_fcn_resnet101_ade(pretrained=True, root='~/.encoding/models', **kwargs):
     ----------
     pretrained : bool, default False
         Whether to load the pretrained weights for model.
-    root : str, default '~/.encoding/models'
+    root : str, default '~/.gluoncvth/models'
         Location for keeping the model parameters.
 
 

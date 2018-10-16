@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 import setuptools.command.develop 
 import setuptools.command.install 
 
-version = '0.0.1'
+version = '0.0.3'
 
 try:
     sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], 
@@ -19,9 +19,9 @@ except Exception:
 def create_version_file():
     global version, cwd
     print('-- Building version ' + version)
-    version_path = os.path.join(cwd, 'encoding', 'version.py')
+    version_path = os.path.join(cwd, 'gluoncvth', 'version.py')
     with open(version_path, 'w') as f:
-        f.write('"""This is encoding version file."""\n')
+        f.write('"""This is gluoncvth version file."""\n')
         f.write("__version__ = '{}'\n".format(version))
 
 # run test scrip after installation

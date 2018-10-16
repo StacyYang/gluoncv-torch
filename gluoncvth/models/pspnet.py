@@ -80,7 +80,7 @@ class PSPHead(nn.Module):
         return self.conv5(x)
 
 def get_psp(dataset='pascal_voc', backbone='resnet50', pretrained=False,
-            root='~/.encoding/models', **kwargs):
+            root='~/.gluoncvth/models', **kwargs):
     r"""PSP model from the paper `"Context Encoding for Semantic Segmentation"
     <https://arxiv.org/pdf/1803.08904.pdf>`_
     Parameters
@@ -89,7 +89,7 @@ def get_psp(dataset='pascal_voc', backbone='resnet50', pretrained=False,
         The dataset that model pretrained on. (pascal_voc, ade20k)
     pretrained : bool, default False
         Whether to load the pretrained weights for model.
-    root : str, default '~/.encoding/models'
+    root : str, default '~/.gluoncvth/models'
         Location for keeping the model parameters.
     Examples
     --------
@@ -105,7 +105,7 @@ def get_psp(dataset='pascal_voc', backbone='resnet50', pretrained=False,
             get_model_file('psp_%s_%s'%(backbone, acronyms[dataset]), root=root)))
     return model
 
-def get_psp_resnet101_voc(pretrained=False, root='~/.encoding/models', **kwargs):
+def get_psp_resnet101_voc(pretrained=False, root='~/.gluoncvth/models', **kwargs):
     r"""PSP model from the paper `"Context Encoding for Semantic Segmentation"
     <https://arxiv.org/pdf/1803.08904.pdf>`_
 
@@ -113,7 +113,7 @@ def get_psp_resnet101_voc(pretrained=False, root='~/.encoding/models', **kwargs)
     ----------
     pretrained : bool, default False
         Whether to load the pretrained weights for model.
-    root : str, default '~/.encoding/models'
+    root : str, default '~/.gluoncvth/models'
         Location for keeping the model parameters.
 
 
@@ -124,7 +124,7 @@ def get_psp_resnet101_voc(pretrained=False, root='~/.encoding/models', **kwargs)
     """
     return get_psp('pascal_voc', 'resnet101', pretrained, root=root, **kwargs)
 
-def get_psp_resnet101_ade(pretrained=False, root='~/.encoding/models', **kwargs):
+def get_psp_resnet101_ade(pretrained=False, root='~/.gluoncvth/models', **kwargs):
     r"""PSP model from the paper `"Context Encoding for Semantic Segmentation"
     <https://arxiv.org/pdf/1803.08904.pdf>`_
 
@@ -132,7 +132,7 @@ def get_psp_resnet101_ade(pretrained=False, root='~/.encoding/models', **kwargs)
     ----------
     pretrained : bool, default False
         Whether to load the pretrained weights for model.
-    root : str, default '~/.encoding/models'
+    root : str, default '~/.gluoncvth/models'
         Location for keeping the model parameters.
 
 

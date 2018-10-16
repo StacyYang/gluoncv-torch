@@ -14,7 +14,7 @@ def get_model(name, **kwargs):
         Name of the model.
     pretrained : bool
         Whether to load the pretrained weights for model.
-    root : str, default '~/.encoding/models'
+    root : str, default '~/.gluoncvth/models'
         Location for keeping the model parameters.
 
     Returns
