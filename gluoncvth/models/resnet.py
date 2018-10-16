@@ -213,7 +213,7 @@ class ResNet(nn.Module):
 
         return x
 
-def resnet18(pretrained=True, **kwargs):
+def resnet18(pretrained=True, root='~/.encoding/models', **kwargs):
     """Constructs a ResNet-18 model.
 
     Args:
@@ -226,7 +226,7 @@ def resnet18(pretrained=True, **kwargs):
     return model
 
 
-def resnet34(pretrained=True, **kwargs):
+def resnet34(pretrained=True, root='~/.encoding/models', **kwargs):
     """Constructs a ResNet-34 model.
 
     Args:

@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 import setuptools.command.develop 
 import setuptools.command.install 
 
-version = '0.0.1'
+version = '0.0.3'
 
 try:
     sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], 

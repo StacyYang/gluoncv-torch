@@ -28,7 +28,7 @@ ImageNet models single-crop error rates, comparing to the `torchvision` models:
 | [ResNet34](#resnet)             | 26.70           | 8.58          | 25.35         | 7.92        |
 | [ResNet50](#resnet)             | 23.85           | 7.13          | 22.33         | 6.18        |
 | [ResNet101](#resnet)            | 22.63           | 6.44          | 20.80         | 5.39        |
-| [ResNet-152](#resnet)           | 21.69           | 5.94          | 20.56         | 5.39        |
+| [ResNet152](#resnet)            | 21.69           | 5.94          | 20.56         | 5.39        |
 | Inception v3                    | 22.55           | 6.44          | 21.33         | 5.61        |
 
 More models available at [GluonCV Image Classification ModelZoo](https://gluon-cv.mxnet.io/model_zoo/classification.html#imagenet)
