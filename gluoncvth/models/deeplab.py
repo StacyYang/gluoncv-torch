@@ -100,7 +100,7 @@ class ASPP_Module(nn.Module):
         return self.project(y)
 
 def get_deeplab(dataset='pascal_voc', backbone='resnet50', pretrained=False,
-            root='~/.encoding/models', **kwargs):
+            root='~/.gluoncvth/models', **kwargs):
     # infer number of classes
     from .base import nclass, acronyms
     model = DeepLabV3(nclass[dataset.lower()], backbone=backbone, root=root, **kwargs)
@@ -110,7 +110,7 @@ def get_deeplab(dataset='pascal_voc', backbone='resnet50', pretrained=False,
             get_model_file('deeplab_%s_%s'%(backbone, acronyms[dataset]), root=root)))
     return model
 
-def get_deeplab_resnet101_voc(pretrained=False, root='~/.encoding/models', **kwargs):
+def get_deeplab_resnet101_voc(pretrained=False, root='~/.gluoncvth/models', **kwargs):
     r"""DeepLabV3 model from the paper `"Context Encoding for Semantic Segmentation"
     <https://arxiv.org/pdf/1803.08904.pdf>`_
 
@@ -118,7 +118,7 @@ def get_deeplab_resnet101_voc(pretrained=False, root='~/.encoding/models', **kwa
     ----------
     pretrained : bool, default False
         Whether to load the pretrained weights for model.
-    root : str, default '~/.encoding/models'
+    root : str, default '~/.gluoncvth/models'
         Location for keeping the model parameters.
 
 
@@ -130,7 +130,7 @@ def get_deeplab_resnet101_voc(pretrained=False, root='~/.encoding/models', **kwa
     return get_deeplab('pascal_voc', 'resnet101', pretrained, root=root, **kwargs)
 
 
-def get_deeplab_resnet101_ade(pretrained=False, root='~/.encoding/models', **kwargs):
+def get_deeplab_resnet101_ade(pretrained=False, root='~/.gluoncvth/models', **kwargs):
     r"""DeepLabV3 model from the paper `"Context Encoding for Semantic Segmentation"
     <https://arxiv.org/pdf/1803.08904.pdf>`_
 
@@ -138,7 +138,7 @@ def get_deeplab_resnet101_ade(pretrained=False, root='~/.encoding/models', **kwa
     ----------
     pretrained : bool, default False
         Whether to load the pretrained weights for model.
-    root : str, default '~/.encoding/models'
+    root : str, default '~/.gluoncvth/models'
         Location for keeping the model parameters.
 
 

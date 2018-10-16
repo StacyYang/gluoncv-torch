@@ -213,7 +213,7 @@ class ResNet(nn.Module):
 
         return x
 
-def resnet18(pretrained=True, root='~/.encoding/models', **kwargs):
+def resnet18(pretrained=True, root='~/.gluoncvth/models', **kwargs):
     """Constructs a ResNet-18 model.
 
     Args:
@@ -226,7 +226,7 @@ def resnet18(pretrained=True, root='~/.encoding/models', **kwargs):
     return model
 
 
-def resnet34(pretrained=True, root='~/.encoding/models', **kwargs):
+def resnet34(pretrained=True, root='~/.gluoncvth/models', **kwargs):
     """Constructs a ResNet-34 model.
 
     Args:
@@ -239,7 +239,7 @@ def resnet34(pretrained=True, root='~/.encoding/models', **kwargs):
     return model
 
 
-def resnet50(pretrained=True, root='~/.encoding/models', **kwargs):
+def resnet50(pretrained=True, root='~/.gluoncvth/models', **kwargs):
     """Constructs a ResNet-50 model.
 
     Args:
@@ -252,7 +252,7 @@ def resnet50(pretrained=True, root='~/.encoding/models', **kwargs):
     return model
 
 
-def resnet101(pretrained=True, root='~/.encoding/models', **kwargs):
+def resnet101(pretrained=True, root='~/.gluoncvth/models', **kwargs):
     """Constructs a ResNet-101 model.
 
     Args:
@@ -265,7 +265,7 @@ def resnet101(pretrained=True, root='~/.encoding/models', **kwargs):
     return model
 
 
-def resnet152(pretrained=True, root='~/.encoding/models', **kwargs):
+def resnet152(pretrained=True, root='~/.gluoncvth/models', **kwargs):
     """Constructs a ResNet-152 model.
 
     Args:
