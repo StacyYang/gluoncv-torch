@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 import setuptools.command.develop 
 import setuptools.command.install 
 
-version = '0.0.4'
+version = '0.0.5'
 
 try:
     from datetime import date
