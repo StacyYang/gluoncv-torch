@@ -1,8 +1,7 @@
 name: Upload Python Package
 
 on:
-  release:
-    types: [created]
+  push
 
 jobs:
   deploy:
