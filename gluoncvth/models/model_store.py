@@ -21,7 +21,7 @@ _model_sha1 = {name: checksum for checksum, name in [
     ]}
 
 gluoncvth_repo_url = 'https://s3.us-west-1.wasabisys.com/resnest'
-_url_format = '{repo_url}/gluoncvth/{file_name}.zip'
+_url_format = '{repo_url}gluoncvth/{file_name}.zip'
 
 def short_hash(name):
     if name not in _model_sha1:
