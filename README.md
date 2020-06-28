@@ -1,5 +1,5 @@
 [![PyPI](https://img.shields.io/pypi/v/gluoncv-torch.svg)](https://pypi.python.org/pypi/gluoncv-torch)
-[![PyPI Pre-release](https://img.shields.io/badge/pypi--prerelease-v0.0.4-ff69b4.svg)](https://pypi.org/project/gluoncv-torch/#history)
+[![PyPI Pre-release](https://img.shields.io/badge/pypi--prerelease-v0.0.6-ff69b4.svg)](https://pypi.org/project/gluoncv-torch/#history)
 [![Upload Python Package](https://github.com/zhanghang1989/gluoncv-torch/workflows/Upload%20Python%20Package/badge.svg)](https://github.com/zhanghang1989/gluoncv-torch/actions)
 [![Downloads](http://pepy.tech/badge/gluoncv-torch)](http://pepy.tech/project/gluoncv-torch)
 # PyTorch-Encoding

@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 import setuptools.command.develop 
 import setuptools.command.install 
 
-version = '0.0.5'
+version = '0.0.6'
 
 try:
     if not os.getenv('RELEASE'):
