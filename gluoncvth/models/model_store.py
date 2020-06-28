@@ -20,7 +20,7 @@ _model_sha1 = {name: checksum for checksum, name in [
     ('c0d88de54f3abbc358038c248f0863bef96fb0d4', 'deeplab_resnet101_ade'),
     ]}
 
-gluoncvth_repo_url = 'https://s3.us-west-1.wasabisys.com/resnest/'
+gluoncvth_repo_url = 'https://s3.us-west-1.wasabisys.com/resnest'
 _url_format = '{repo_url}/gluoncvth/{file_name}.zip'
 
 def short_hash(name):
