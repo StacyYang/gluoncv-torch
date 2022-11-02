@@ -43,7 +43,7 @@ requirements = [
     'numpy',
     'torch',
     'tqdm',
-    'request',
+    'requests',
     'Pillow',
 ]
 
